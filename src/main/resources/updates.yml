@@ -1,0 +1,17 @@
+##############################################################
+#  _      _____     ____   _               _  _              #
+# | |    |  ___|   / ___| | |_  _   _   __| |(_)  ___   ___  #
+# | |    | |_      \___ \ | __|| | | | / _` || | / _ \ / __| #
+# | |___ |  _|      ___) || |_ | |_| || (_| || || (_) |\__ \ #
+# |_____||_|       |____/  \__| \__,_| \__,_||_| \___/ |___/ #
+##############################################################
+# Update manager configuration.
+update:
+  enabled: true
+  interval-seconds: 1800
+  notify-console: true
+  notify-on-join: true
+  notify-permission: lfautotools.update.notify
+  source:
+    # Endpoint must return latest version as plain text, e.g. 1.0.1
+    url: ""
