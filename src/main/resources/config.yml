@@ -1,0 +1,43 @@
+##############################################################
+#  _      _____     ____   _               _  _              #
+# | |    |  ___|   / ___| | |_  _   _   __| |(_)  ___   ___  #
+# | |    | |_      \___ \ | __|| | | | / _` || | / _ \ / __| #
+# | |___ |  _|      ___) || |_ | |_| || (_| || || (_) |\__ \ #
+# |_____||_|       |____/  \__| \__,_| \__,_||_| \___/ |___/ #
+##############################################################
+# Main module toggles. Disable any module to avoid loading listeners, commands logic, tasks and hooks for it.
+modules:
+  autogui: true
+  autosort: true
+  autosell: true
+  autosmelt: true
+  autocompress: true
+  autopickup: true
+  inventory-linking: true
+  filters: true
+  inventory-push: true
+  inventory-pull: true
+  inventory-autopush: true
+  custom-shops: true
+  worldguard-restrictions: true
+  multipliers: true
+  hooks: true
+  update-manager: true
+
+# AutoSmelt recipe map. Key=input material, value=smelt result.
+autosmelt:
+  recipes:
+    IRON_ORE: IRON_INGOT
+    DEEPSLATE_IRON_ORE: IRON_INGOT
+    GOLD_ORE: GOLD_INGOT
+
+# AutoCompress recipe map. Key=item, value=compressed result generated per 9 items.
+autocompress:
+  recipes:
+    IRON_INGOT: IRON_BLOCK
+    COAL: COAL_BLOCK
+    REDSTONE: REDSTONE_BLOCK
+
+# Inventory filtering limits and processing behavior.
+filters:
+  max-filters-per-player: 12
